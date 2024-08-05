@@ -1,6 +1,7 @@
 import pandas as pd
 from haversine import haversine, Unit
 
+
 # エクセルファイルから避難場所のデータを読み込む関数
 def load_shelters_from_excel(file_path):
     shelters = []
@@ -35,7 +36,7 @@ def main():
     current_location = (latitude, longitude)
 
     # 避難場所のデータをエクセルファイルから読み込む
-    file_path = r'C:\\Users\\karir\\OneDrive\\デスクトップ\\shelters.xlsx' 
+    file_path = r'shelters.xlsx' 
     shelters = load_shelters_from_excel(file_path)
 
     # 最寄りの避難場所を特定
